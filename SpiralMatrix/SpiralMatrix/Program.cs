@@ -7,9 +7,10 @@ namespace SpiralMatrix
         static void Main(string[] args)
         {
             Console.Write("Введите ширину матрицы: ");
-            int rows = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Введите высоту матрицы: ");
             int columns = Convert.ToInt32(Console.ReadLine());
+            
+            Console.Write("Введите высоту матрицы: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
 
             var spiralMatrix = new int[rows][];
             for (int i = 0; i < rows; i++)
@@ -18,6 +19,8 @@ namespace SpiralMatrix
             }
 
             MakeSpiralMatrix(columns,rows,spiralMatrix);
+
+            Console.Write("\nРезультирующая матрица \n");
             PrintMatrix(spiralMatrix);
 
             Console.ReadKey();
