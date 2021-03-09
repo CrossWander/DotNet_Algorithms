@@ -59,16 +59,19 @@ namespace SpiralMatrix
             int startRow = 0, startCol = 0;
             int endRow = rows - 1;
             int endCol = columns - 1;
-
             int element = 1;
 
-            while (startCol <= endCol && startRow <= endRow)
+
+            while (element <= columns*rows)
             {
                 // fill row from left to right and then incrementing start row number
                 for (int i = startCol; i <= endCol; i++)
                 {
-                    matrix[startRow][i] = element;
-                    element++;
+                    if (matrix[startRow][i] == 0)
+                    {
+                        matrix[startRow][i] = element;
+                        element++;
+                    }
                 }
                 startRow++;
                 if (rows == 1) break;
@@ -77,17 +80,23 @@ namespace SpiralMatrix
                 // fill column from top to bottom and then decrease last column number
                 for (int j = startRow; j <= endRow; j++)
                 {
-                    matrix[j][endCol] = element;
-                    element++;
+                    if (matrix[j][endCol] == 0)
+                    {
+                        matrix[j][endCol] = element;
+                        element++;
+                    }
                 }
                 endCol--;
                 if (columns == 1) break;
 
-                // fill row from right to left and then decrease last row number
+                // fill row from right to left and then decrease last row number    /// в конце идет сюда и снова  меняет
                 for (int i = endCol; i >= startCol; i--)
                 {
-                    matrix[endRow][i] = element;
-                    element++;
+                    if (matrix[endRow][i] == 0)
+                    {
+                        matrix[endRow][i] = element;
+                        element++;
+                    }
                 }
                 endRow--;
 
@@ -95,8 +104,11 @@ namespace SpiralMatrix
                 // fill column from bottom to top and then incrementing start columnt number
                 for (int j = endRow; j >= startRow; j--)
                 {
-                    matrix[j][startCol] = element;
-                    element++;
+                    if (matrix[j][startCol] == 0)
+                    {
+                        matrix[j][startCol] = element;
+                        element++;
+                    }
                 }
                 startCol++;
             }
