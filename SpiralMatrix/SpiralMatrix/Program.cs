@@ -74,7 +74,6 @@ namespace SpiralMatrix
                     }
                 }
                 startRow++;
-                if (rows == 1) break;
 
 
                 // fill column from top to bottom and then decrease last column number
@@ -87,7 +86,6 @@ namespace SpiralMatrix
                     }
                 }
                 endCol--;
-                if (columns == 1) break;
 
                 // fill row from right to left and then decrease last row number    /// в конце идет сюда и снова  меняет
                 for (int i = endCol; i >= startCol; i--)
