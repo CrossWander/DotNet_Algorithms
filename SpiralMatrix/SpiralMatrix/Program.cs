@@ -62,7 +62,7 @@ namespace SpiralMatrix
 
             int element = 1;
 
-            while (element <= columns * rows)
+            while (startCol <= endCol && startRow <= endRow)
             {
                 // fill row from left to right and then incrementing start row number
                 for (int i = startCol; i <= endCol; i++)
@@ -71,6 +71,8 @@ namespace SpiralMatrix
                     element++;
                 }
                 startRow++;
+                if (rows == 1) break;
+
 
                 // fill column from top to bottom and then decrease last column number
                 for (int j = startRow; j <= endRow; j++)
@@ -79,6 +81,7 @@ namespace SpiralMatrix
                     element++;
                 }
                 endCol--;
+                if (columns == 1) break;
 
                 // fill row from right to left and then decrease last row number
                 for (int i = endCol; i >= startCol; i--)
@@ -87,6 +90,7 @@ namespace SpiralMatrix
                     element++;
                 }
                 endRow--;
+
 
                 // fill column from bottom to top and then incrementing start columnt number
                 for (int j = endRow; j >= startRow; j--)
