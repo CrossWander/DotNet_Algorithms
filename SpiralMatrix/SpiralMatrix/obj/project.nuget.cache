@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5M/sg1UAbMKnm5UG2PL3q4s6lVchGNDtkmuJEmZPr1KRpM7HiD/7V+9SfInAkVjA4PBKb7wtDnhRbpCbHvydsA==",
+  "dgSpecHash": "ukUI0v38DCNYOjLhepjF3610E96xCGD5lLLW5+t1oS1a35LnBeeW0NmJwl4soKJ/lOf8Q7u8oUHNqNwNrR5xZA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\CrossWander\\Desktop\\DotNet_Algorithms-main\\SpiralMatrix\\SpiralMatrix\\SpiralMatrix.csproj",
+  "projectFilePath": "C:\\Users\\CrossWander\\Desktop\\SpiralMatrix\\SpiralMatrix\\SpiralMatrix.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

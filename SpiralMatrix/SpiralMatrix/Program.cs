@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace SpiralMatrix
 {
@@ -6,24 +7,50 @@ namespace SpiralMatrix
     {
         static void Main(string[] args)
         {
-            Console.Write("Введите ширину матрицы: ");
-            int columns = Convert.ToInt32(Console.ReadLine());
-            
-            Console.Write("Введите высоту матрицы: ");
-            int rows = Convert.ToInt32(Console.ReadLine());
-
-            var spiralMatrix = new int[rows][];
-            for (int i = 0; i < rows; i++)
+            bool endApp = false;
+            while (!endApp)
             {
-                spiralMatrix[i] = new int[columns];
+
+                int columns, rows;
+                string col = "", row = "";
+
+                Console.Write("Введите ширину матрицы: ");
+                col = Console.ReadLine();
+
+
+                while (!int.TryParse(col, out columns) || Convert.ToInt32(col) == 0 || col.Contains("-") )
+                {
+                    Console.Write("Ошибка ввода. Повторите ввод ширины матрицы: ");
+                    col = Console.ReadLine();
+                }
+
+                Console.Write("Введите высоту матрицы: ");
+                row = Console.ReadLine();
+
+                while (!int.TryParse(row, out rows) || Convert.ToInt32(row) == 0 || row.Contains("-"))
+                {
+
+                        Console.Write("Ошибка ввода. Повторите ввод высоты матрицы: ");
+                        row = Console.ReadLine();
+                }
+
+                var spiralMatrix = new int[rows][];
+                for (int i = 0; i < rows; i++)
+                {
+                    spiralMatrix[i] = new int[columns];
+                }
+
+                MakeSpiralMatrix(columns, rows, spiralMatrix);
+
+                Console.Write("\nРезультирующая матрица \n");
+                PrintMatrix(spiralMatrix);
+
+                
+                Console.Write("\nНажмите 'n' и Enter чтобы закрыть приложение или нажмите любую клавишу для повторного запуска: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); 
             }
-
-            MakeSpiralMatrix(columns,rows,spiralMatrix);
-
-            Console.Write("\nРезультирующая матрица \n");
-            PrintMatrix(spiralMatrix);
-
-            Console.ReadKey();
 
         }
 

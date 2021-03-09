@@ -24,3 +24,16 @@ C:\Users\CrossWander\Desktop\DotNet_Algorithms-main\SpiralMatrix\SpiralMatrix\ob
 C:\Users\CrossWander\Desktop\DotNet_Algorithms-main\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.dll
 C:\Users\CrossWander\Desktop\DotNet_Algorithms-main\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.pdb
 C:\Users\CrossWander\Desktop\DotNet_Algorithms-main\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.genruntimeconfig.cache
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\bin\Debug\netcoreapp3.1\SpiralMatrix.exe
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\bin\Debug\netcoreapp3.1\SpiralMatrix.deps.json
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\bin\Debug\netcoreapp3.1\SpiralMatrix.runtimeconfig.json
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\bin\Debug\netcoreapp3.1\SpiralMatrix.runtimeconfig.dev.json
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\bin\Debug\netcoreapp3.1\SpiralMatrix.dll
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\bin\Debug\netcoreapp3.1\SpiralMatrix.pdb
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.csprojAssemblyReference.cache
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.AssemblyInfoInputs.cache
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.AssemblyInfo.cs
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.csproj.CoreCompileInputs.cache
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.dll
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.pdb
+C:\Users\CrossWander\Desktop\SpiralMatrix\SpiralMatrix\obj\Debug\netcoreapp3.1\SpiralMatrix.genruntimeconfig.cache
